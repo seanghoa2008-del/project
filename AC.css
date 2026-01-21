@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: rgb(27,51,81);
+    display: flex;
+    justify-content: center;
+    padding-block: 15px;
+    box-shadow: 0 5px 7px black;
+}
+header .nav{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .nav .logo {
+    width: 230px;
+    height: 60%;
+}
+header .nav .logo img{
+    width: 40%;
+    height: 40%;
+}
+header .nav .menu {
+    height: 100%;
+}
+header .nav .menu ul{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+header .nav .menu ul li{
+    padding: 20px;
+    margin-inline: 2px;
+    list-style-type: none;
+    transition: all 200ms ease-in-out;
+    position: relative;
+}
+header .nav .menu li:nth-child(2) .drop1{
+    position: absolute;
+    overflow: hidden;
+    width: 250px;
+    height: 0;
+    background-color: #122133;
+    top: 100%;
+    right: 0;
+    border-radius: 20px;
+    transition: all 200ms ease-in-out;
+}
+header .nav .menu li:nth-child(2):hover .drop1{
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    background-color: #122133;
+    top: 100%;
+    right: 0;
+    border-radius: 20px;
+}
+header .nav .menu li:nth-child(2) .drop1 ul{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    align-items: end;
+}
+header .nav .menu li:nth-child(2) .drop1 ul li{
+    padding: 10px;
+}
+header .nav .menu li:nth-child(2).drop1 ul li a{
+    color: white;
+    font-size: 10px;
+    transition: all 200ms ease-in-out;
+}
+header .nav .menu li:nth-child(2) .drop1 ul li:hover a{
+    color: #b89c3e;
+    text-decoration: underline;
+}
+header .nav .menu ul li:hover{
+    background-color: rgba(0, 0, 0, 0.37);
+    border-radius: 10px;
+}
+header .nav .menu ul li a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.916);
+    font-size: 12px;
+    display: block;font-weight: 600;
+    text-transform: uppercase;
+}
+header .nav .menu ul li:nth-child(4) a{
+    color: #b89c3e;
+}
+header .nav .menu ul li a i{
+    margin-left: 3px;
+    transform: rotate(180deg);
+    transition: all 200ms ease-in-out;
+}
+header .nav .menu ul li:nth-child(2):hover a i{
+    transform: rotate(360deg);
+}
+header .nav .menu ul li a img{
+    width: 40px;
+}
+.w100{
+    width: 100%;
+    background-color: #122133;
+    display: flex;
+    justify-content: center;
+}
+.section{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+.section .menu{
+    height: 100%;
+    display: flex;
+}
+.section .menu ul{
+    align-items: center;
+    display: flex;
+    height: 100%;
+}
+.section .menu ul li{
+    padding: 20px;
+    list-style-type: none;
+}
+.section .menu ul li:hover .drop2 ul li a {
+    color: white;
+}
+.section .menu ul li a{
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 200ms ease-in-out;
+}
+.section .menu ul li a i {
+    transform: rotate(180deg);
+    transition: all 200ms ease-in-out;
+}
+.section .menu ul li :first-child{
+    position: relative;
+}
+section .menu ul li:first-child .drop2 {
+    position: absolute;
+    width: 220px;
+    height: 0;
+    background-color: #122133;
+    top: 107%;
+    right: 0;
+    border-radius: 20px;
+    border: none;
+    transition: all 200ms ease-in-out;
+    overflow: hidden;
+    z-index: 10;
+}
+.section .menu ul li:first-child:hover .drop2{
+    z-index: 10;
+    position: absolute;
+    width: 220px;
+    height: 230px;
+    background-color: #122133;
+    top: 108%;
+    right: 0;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.59);
+}
+.section .menu ul li:first-child .drop2 ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.section .menu ul li:first-child .drop2 ul li{
+    padding: 7px;
+}
+.section .menu ul li:hover a{
+    color: #b89c3e;
+}
+.section .menu ul li:nth-child(1):hover a i{
+    transform: rotate(360deg);
+}
+.section .menu ul li:first-child .drop2 ul li:hover a {
+    color: #b89c3e;
+    text-decoration: underline;
+}
+.section .ex ul{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.section .ex ul li{
+    padding: 20px;
+    list-style-type: none;
+}
+.section .ex ul li a{
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+}
+.section .ex ul li a img{
+    width: 40px;
+}
